@@ -19,14 +19,17 @@
 
 ### Prerequisities
 0. Anaconda 3
-1.  Python 3
+1. Python 3
 2. CUDNN and CUDA ToolKit Installed
 3. GPU with CUDA 9.0 and above support
 
 ## Installation Instructions:
 - A conda environment file has been provided, please make use of environment file to install the necessary requirement packages.
+		
 		conda create -n "YourEnvironmentName" -f environment.yml
+
 - Project uses Cython, so build that too.
+		
 		python3 setup.py build_ext --inplace
 
 Remember to download pretrained weights if you need to
